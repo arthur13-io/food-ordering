@@ -147,6 +147,17 @@ a{
   height: 100%;
   background-color: transparent;
   backdrop-filter: blur(1.5px) brightness(90%) saturate(120%);
+  top: 0;
+  display: none;
+}
+
+#menu .back-drop.drop-left {
+  left: 0;
+}
+
+#menu .back-drop.drop-right {
+  right: 0;
+  display: block;
 }
 
 #menu .scroll-box {
@@ -174,6 +185,7 @@ a{
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 1;
 }
 
 .menu-btn.left {
@@ -189,9 +201,9 @@ a{
   border: 1px solid #9C9FA9;
   text-align: center;
 }
-.list-item:hover{
+/* .list-item:hover{
   border-bottom: 5px solid black;
-}
+} */
 .menu-list-item-link{
   padding: .7rem 0 1rem 0;
   display: flex;
